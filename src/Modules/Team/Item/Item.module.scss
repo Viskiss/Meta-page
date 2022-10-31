@@ -1,0 +1,16 @@
+.block {
+  width: 245px;
+  margin: 30px;
+  height: 309px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "DM Mono";
+  }
+}
