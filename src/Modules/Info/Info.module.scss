@@ -1,0 +1,63 @@
+.sphereanimation {
+  z-index: -10000;
+  width: 680px;
+  height: 680px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 2px;
+  stroke: rgba(43, 102, 59, 0.542);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: 0.4px;
+  }
+}
+
+.block {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.block div:nth-child(3) button {
+  background-color: inherit;
+  color: white;
+  border: 2px solid #8dfd1b;
+}
+
+.sp {
+  position: absolute;
+  z-index: -1;
+
+  left: 800px;
+  transform: rotate(3.142rad);
+}
+
+.sp1 {
+  position: absolute;
+  z-index: -1;
+  top: 500px;
+  left: 100px;
+  transform: rotate(2.142rad);
+}
+
+.sp2 {
+  position: absolute;
+  z-index: -1;
+  right: 1000px;
+  bottom: 4100px;
+  transform: rotate(3.142rad);
+}
+
+.sp3 {
+  position: absolute;
+  z-index: -1;
+  bottom: 2850px;
+
+  transform: rotate(3.142rad);
+}

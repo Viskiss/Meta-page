@@ -1,0 +1,42 @@
+.text {
+    font-family: "Audiowide", cursive;
+    font-size: 70px;
+    display: flex;
+    position: absolute;
+    color: #999;
+    letter-spacing: 100px;
+    margin-top: -200px;
+  
+    left: 52%;
+    transform: translateX(-50%);
+    user-select: none;
+  
+    .wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      .letter {
+        transition: ease-out 1s;
+        transform: translateY(40%);
+      }
+      .shadow {
+        transform: scale(1, -1);
+        color: rgba(153, 153, 153, 0.096);
+        transition: ease-in 5s, ease-out 5s;
+      }
+      &:hover {
+        .letter {
+          transform: translateY(-20%);
+        }
+        .shadow {
+          opacity: 0;
+          transform: translateY(20%);
+        }
+      }
+    }
+  }
+  
+  .block {
+    margin-top: 70px;
+  }
+  
